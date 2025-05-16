@@ -10,11 +10,7 @@ import {
   PlayFill,
 } from "react-bootstrap-icons";
 
-import bannerMan from "../../assets/img/banner/banner-man.png";
 import scrollDown from "../../assets/img/banner/scroll-down.png";
-import dial from "../../assets/img/banner/dial.png";
-import bnArrow from "../../assets/img/banner/bn-arrow.png";
-import VideoPlay from "../Shared/VideoPlay/VideoPlay";
 
 
 const Banner = () => {
@@ -52,33 +48,15 @@ const Banner = () => {
                   Architect
                 </span>
               </h1>
-              {/* <div className="video__area">
-                <img src={bnArrow} className="vid__arrow" alt="img" />
-                <div onClick={openLightbox} className="video__80 video-btn">
-                  <i>
-                    <PlayFill />
-                  </i>
-                </div>
-                <span className="proces">Work Process</span>
-              </div> */}
             </div>
           </div>
           <div className="col-lg-4">
-            {/* <div
-              className={`banner__thumb  ${
-                position  ? "right_up_animat" : "right_up"
-              }`}
-             
-            >
-              <img src={bannerMan} alt="man-img" />
-            </div> */}
           </div>
         </div>
       </div>
       <div className="banner__leftinfo">
         <div className="left__infomobile">
           <Link to={""}>
-            {/* <img src={dial} alt="img" /> */}
           </Link>
           <Link to={""}> </Link>
         </div>
@@ -91,35 +69,7 @@ const Banner = () => {
           </Link>
         </div>
       </div>
-      {/* <div className="banner__rightinfo">
-        <div className="right__infoscroll">
-          <Link to={""} className="scroll">
-            Follow Me
-          </Link>
-          <Link to={""} className="scroll__bar">
-            <img src={scrollDown} alt="img" />
-          </Link>
-        </div>
-        <div className="banner__xlsocial">
-          <ul className="banner__soci d-grid justify-content-center">
-            {socalIcon.map(({ icon, id }) => {
-              return (
-                <li key={id}>
-                  <Link to={""} >
-                    <i>{icon}</i>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </div> */}
-      {/* {lightboxOpen && (
-        <VideoPlay
-          setLightboxOpen={setLightboxOpen}
-          url="https://www.youtube.com/embed/tgbNymZ7vqY"
-        />
-      )} */}
+      
     </section>
   );
 };
