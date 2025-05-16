@@ -1,12 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-// const path = require('path')
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
 
-// https://vitejs.dev/config/
+const isProd = process.env.NODE_ENV === "production";
+
 export default defineConfig({
+  base: isProd ? "/portfolio/" : "/",
   plugins: [react()],
-  // root:path.resolve(__dirname, 'src'),
-  // build:{
-  //   outDir:"../dist"
-  // }
-})
+});
